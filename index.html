@@ -1,21 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogging Site</title>
-    <link href="style.css" rel="stylesheet">
-</head>
-<body>
-    <header class="header">
-        <a href="" class="logo">CSS Nav</a>
-        <ul class="menu">
-          <li><a href="#work">Our Work</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#careers">Careers</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-    </header>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blogging Site</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <!-- Header Navbar -->
+        <header class="header">
+            <a href="" class="logo">BLOG</a>
+            <ul class="menu">
+            <li><a class="active" href="#Home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+        
+        <!-- Banner -->
+        <section>
+            <div class="banner-section">
+                <div class="container">
+                    <div class="banner-body">
+                        <h1 class="banner-title">Welcome to Blog Home!</h1>
+                        <p class="banner-subtitle">A Simplilearn Phase One Blog Homepage Project</p>
+                        <form>
+                            <div class="row formDiv">
+                                <div class="input-field col s12">
+                                    <input class="form-control" id="inputValue" type="text" placeholder="Enter Blog Title" />
+                                    <textarea class="form-control" id="inputDes" type="text" placeholder="Enter Blog Description..." ></textarea>
+                                    <button class="btn btnAdd" id="li-generate">ADD BLOG</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+		<!-- Blog List section -->
+        <section class="container">
+            <h2 class="red-text lighten-2">Technologies</h2>
+            <div class="blogList">
+                <div class="blog-item">Web Designing
+                    <p class="desc">Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. </p>
+                    <div class="remove">Remove Blog !</div>
+                </div>
+                <div class="blog-item">Web Development
+                    <p class="desc">Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. </p>
+                    <div class="remove">Remove Blog !</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            Copyright &#169; All Right Reserved <a href="#!">Blog.com</a>
+        </footer>
+    </body>
 </html>
